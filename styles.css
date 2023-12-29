@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-box {
+    height: 100vh;
+    width: 100%;    
+    background-image: url(./img/imagem.png);
+    background-color: #191919;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+
+}
+
+.portfolio {
+    color: #ffffff;
+    font-size: 35px;
+
+}
+
+.portfolio span {
+    color: #5490b3;
+    font-size: 35px;
+}
+
+li {
+    color: white;
+    list-style: none;
+    display: inline-block;
+    font-size: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #5490b3;
+    transition: 0.5s;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: white;
+} 
+
+.name {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+}
+
+h1 {
+    color: white;
+    font-size: 150px;
+}
+
+.portfolio span.c1 {
+    color: #5490b3; 
+}
+
+.portfolio span.c2 {
+    color: white;
+}
+
+.name span.c3 {
+    color: #5490b3; 
+}
+
+.name h3 {
+    color: white;
+    font-size: 50px;
+}
+
+.sobre {
+    display: flex;
+    padding: 60px 200px;
+    align-items: center;
+    background-color: black;
+}
+
+.sobre img {
+    height: 600px;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-right: 40px;
+}
+
+.sobre div h2 {
+    color: white;
+    font-size: 75px;
+}
+
+.sobre div p {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+.sobre div button {
+    color: white;
+    background-color: #5490b3;
+    height: 99px;
+    width: 264px;
+    font-size: 29px;
+    border: none;
+    border-radius: 21px;
+    cursor: pointer;
+}
+
+.sobre div button:hover {
+    background-color: black;
+    border: 3px solid #5490b3;
+    transition: 0.5s;
+}
+
+.projetos {
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.projetos h2 {
+    color: white;
+    padding: 30px 30px;
+    font-size: 100px;
+}
+
+.card {
+    background-color: black;
+    height: 500px;
+    width: 355px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 20px 35px;
+}
+
+.card img {
+    height: 200px;
+}
+
+.card h5 {
+    font-size: 24px;
+    color: white;
+}
+
+.card p {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.card a {
+    font-size: 20px;
+    color: white;
+    background-color: #5490b3;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: transparent;
+    border: 2px solid #5490b3;
+    transition: 0.5s; 
+}
+
+.card-projetos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+footer {
+    background-color: black;
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h5 {
+    color: white;
+    font-size: 100px;
+}
+
+footer p {
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social img {
+    height: 60px;
+    border-radius: 50%;
+}
+
+.social a {
+    cursor: pointer;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+/* PARTE REFERENTE AO CHECKBOX DE MUDANÇA DE ESTILO VISUAL*/
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: transformX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px)
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+/* APLICANDO O EFEITO DE LIGHT*/
+
+.main-box.light {
+    background: white;
+}
+
+.main-box.light .c1 {
+    color: rgb(252, 101, 0);
+}
+
+.main-box.light .c2 {
+    color: #191919;
+}
+
+.main-box.light .c3 {
+    color: rgb(252, 101, 0);
+}
+
+.main-box.light .c4 {
+    color: #191919;
+}
+
+.main-box.light .c5 {
+    color: #191919;
+}
+
+.main-box.light .link-menu{
+    color: #191919;
+}
+
+.main-box.light {
+    height: 100vh;
+    width: 100%;   
+    background-image: url(./img/imagem3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-box.light img {
+    display: none; /* ou qualquer outra regra para esconder a imagem original */
+}
