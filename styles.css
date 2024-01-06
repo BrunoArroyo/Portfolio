@@ -5,13 +5,22 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+        overflow-x: hidden; /* Adicione esta propriedade para evitar barras de rolagem horizontais */
+}
+
 .main-box {
     height: 100vh;
-    width: 100%;    
+    width: 100%;
     background-image: url(./img/imagem.png);
     background-color: #191919;
     background-size: cover;
     background-position: center;
+    margin-top: 10px; /* Ajuste conforme necessário */
 }
 
 nav {
@@ -315,4 +324,15 @@ footer p {
 
 .main-box.light img {
     display: none; /* ou qualquer outra regra para esconder a imagem original */
+}
+
+.navegator {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 11%;
+        background-color: #191919; /* Cor de fundo cinza */
+        z-index: 1000; /* Z-index para garantir que a barra de navegação fique acima dos outros elementos */
+        margin-bottom: 200px; /* Adicione uma margem inferior para aumentar o espaço abaixo do navegador */
 }
