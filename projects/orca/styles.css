@@ -1,0 +1,23 @@
+@keyframes movePlane {
+    0% { transform: translateX(-200%) scaleX(1); }
+    20% { transform: translateX(3900%) scaleX(1); }
+    30% { transform: translateX(3900%) scaleX(-1); }
+    50%, 100% { transform: translateX(-300%) scaleX(-1); }
+}
+/* Estiliza o avião */
+.plane {
+    position: absolute;
+    top: 1%;
+    left: 0;
+    width: 50px; /* Ajuste conforme necessário */
+    height: 30px; /* Ajuste conforme necessário */
+    background-size: cover;
+    transform-origin: right center;
+    animation: movePlane 16000ms linear infinite;
+}
+
+.plane img {
+    height: 50px;
+    border-radius: 20px;
+    margin-right: 40px;
+}
