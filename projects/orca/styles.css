@@ -1,8 +1,8 @@
 @keyframes movePlane {
-    0% { transform: translateX(-200%) scaleX(1); }
+    0% { transform: translateX(-220%) scaleX(1); }
     20% { transform: translateX(3900%) scaleX(1); }
     30% { transform: translateX(3900%) scaleX(-1); }
-    50%, 100% { transform: translateX(-300%) scaleX(-1); }
+    50%, 100% { transform: translateX(-220%) scaleX(-1); }
 }
 /* Estiliza o avião */
 .plane {
@@ -13,11 +13,36 @@
     height: 30px; /* Ajuste conforme necessário */
     background-size: cover;
     transform-origin: right center;
-    animation: movePlane 16000ms linear infinite;
+    animation: movePlane 25000ms linear infinite;
 }
 
 .plane img {
     height: 50px;
     border-radius: 20px;
     margin-right: 40px;
+}
+
+.cruise {
+    position: absolute;
+    top: 78%;
+    left: 0;
+    width: 50px; /* Ajuste conforme necessário */
+    height: 30px; /* Ajuste conforme necessário */
+    background-size: cover;
+    transform-origin: right center;
+    animation: movePlane 40000ms linear infinite;
+}
+
+.cruise img {
+    height: 60px;
+    border-radius: 20px;
+    margin-right: 40px;
+}
+
+.resumo {
+    text-decoration: underline;
+}
+
+.main-library {
+    text-decoration: underline;
 }
